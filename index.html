@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKAN NAME GENERATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="highlight">The Ghanaian naming culture</header>
+    <div class="intoduction">
+        <h1><u>The Akan Name Generator</u></h1>
+        <p>The <strong>Akan Name Generator</strong> is a simple web tool that generates traditional Ghanaian Akan names based on a person's date of birth and gender. Akan names come from the <em>Akan people of Ghana </em> and are given according to the day of the week a person was born. The generator helps users quickly discover their cultural side.</p>
+        <div class="akan-image">
+            <img src="images/Akan Names.jpeg" alt="The Akan Names in regards to gender and day.">
+            <br>
+            <p>Please enter your Date of birth by:</p>
+        </div>
+        <h4><u>Filling in the form.</u></h4>
+        <form id="akan-name">
+            <div class="row">
+                <div class="field">
+                    <label for="date">date of birth</label>
+            <input type="number" id="date" min="1" max="31" placeholder="DD" required>
+                </div>
+                <br>
+                <div class="field">
+                    <label for="month">month of birth</label>
+                    <input type="number" id="month" min="1" max="12" placeholder="MM" required>
+                 </div>
+                 <br>
+                 <div class="field">
+                    <label for="year">year of birth</label>
+                    <input type="number" id="year"  placeholder="YYYY" required>
+                 </div>   
+                 <div class="field">
+                    <label for="gender">gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">--Choose--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+                 </div>
+            </div>  
+            <div class="button-container">
+                <button type="submit" id="submit">Akan Name</button>
+            </div>
+        </form>
+    </div>   
+    <div class="result-section">
+        <h2>Your Akan results will appear Here</h2>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
